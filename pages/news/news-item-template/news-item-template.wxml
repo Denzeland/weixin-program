@@ -1,0 +1,18 @@
+<!--资讯列表的可复用模板  -->
+<template name="newsItem">
+  <view class="news-container">
+        <view class="news-author-date">
+            <image class="news-author" src="{{avatar}}"></image>
+            <text class="news-date">{{date}}</text>
+          </view>
+          <text class="news-title">{{title}}</text>
+          <image class="news-image" src="{{imgSrc}}"></image>
+          <text class="news-content">{{content}}</text>
+          <view class="news-commit">
+            <image class="news-commit-image" src="/images/icon/chat.png"></image>
+            <text class="news-commit-font">{{reading}}</text>
+            <image class="news-commit-image" src="/images/icon/view.png"></image>
+            <text class="news-commit-font">{{collection}}</text>
+          </view>
+    </view>
+</template>

@@ -1,0 +1,20 @@
+<view class="container">
+  <image class="header-img" src="{{newsData.headImgSrc}}"></image>
+  <image class="audio" catchtap="playMusic" src="{{isPlaying?'/images/music/music-start.png': '/images/music/music-stop.png'}}"></image>
+  <view class="author-date">
+    <image class="author-img" src="{{newsData.avatar}}"></image>
+    <text class="author">{{newsData.author}}</text>
+    <text class="const-text">发表于</text>
+    <text class="date">{{newsData.dateTime}}</text>
+  </view>
+  <text class='title'>{{newsData.title}}</text>
+  <view class="tool">
+    <view class="tool-img">
+      <image wx:if="{{collected}}" catchtap="onCollected" src="/images/icon/collection.png"></image>
+      <image wx:else catchtap="onCollected" src="/images/icon/collection-anti.png"></image>
+      <image catchtap="onShare" class="share-img" src="/images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="detail">{{newsData.detail}}</text>
+</view>

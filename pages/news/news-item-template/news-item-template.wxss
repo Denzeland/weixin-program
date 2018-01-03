@@ -1,0 +1,63 @@
+/*资讯列表的可复用模板的样式  */
+.news-container {
+   display: flex;
+   flex-direction: column;
+   margin-top: 20rpx;
+   margin-bottom: 40rpx;
+   background-color: #fff;
+   border-bottom: 1px solid #dedede;
+   border-top: 1px solid #dedede;
+   padding-bottom: 5px;
+ }
+
+ .news-author-date {
+   margin: 10rpx 0 20rpx 10rpx;
+ }
+ .news-author {
+   width: 60rpx;
+   height: 60rpx;
+   vertical-align: middle;
+ }
+ .news-date {
+   margin-left: 20rpx;
+   vertical-align: middle;
+   margin-bottom: 5px;
+   font-size: 26rpx;
+ }
+ .news-title {
+   font-size: 34rpx;
+   font-weight: 700;
+   color: #333;
+   margin-bottom: 10px;
+   margin-left: 10px;
+ }
+ .news-image {
+   width: 100%;
+   height: 400rpx;
+   /* margin-left: 16px; */
+   margin-bottom: 10px;
+ }
+ .news-content {
+   color: #666;
+   font-size: 28rpx;
+   line-height: 40rpx;
+   margin-left: 20rpx;
+   margin-bottom: 20rpx;
+   letter-spacing: 2rpx;
+ }
+ .news-commit {
+   font-size: 13px;
+   flex-direction: row;
+   line-height: 16px;
+   margin-left: 10px;
+ }
+ .news-commit-image {
+   width: 16px;
+   height: 16px;
+   margin-left: 8px;
+   vertical-align: middle;
+ }
+ .news-commit-font {
+   vertical-align: middle;
+   margin-left: 5px;
+ }
